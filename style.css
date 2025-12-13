@@ -1354,8 +1354,8 @@ This is main CSS file that contains custom style rules used in this template
   background-color: #fff;
   /* background-color: #f3f1ed; */
   
-  padding: 40px;
-  margin-right: 60px;
+  padding: 0;
+  /* margin-right: 60px; */
   /* margin-top: -10px; */
 
   transition: 0.5s all ease-out;
@@ -1363,6 +1363,7 @@ This is main CSS file that contains custom style rules used in this template
   position: absolute;
   z-index: 1;
   overflow: hidden;
+  border-bottom-right-radius: 5%;
 }
 .main-logo * {
   outline: none;
@@ -2167,14 +2168,16 @@ div.banner-content{
 #intro .button-container {
   display: flex;
   position: absolute;
+  margin-bottom: 5px;
   bottom: 0;
-  right: 0;
+  /* right: 0; */
+  width: 100%;
 }
 .button-container {
-  left:50%; 
-  transform: translateX(-50%);
+  /* left:50%;  */
+  /* transform: translateX(-50%); */
   /* gap:2px; */
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #intro .button-container button.slick-arrow {
@@ -2242,6 +2245,7 @@ div.banner-content{
 
   #intro .button-container {
     bottom: 0;
+    margin-bottom: 15%;
   }
 }
 
