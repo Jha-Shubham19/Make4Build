@@ -2054,6 +2054,74 @@ body.nav-active .nav__list-item:nth-child(10) {
   .nav__list-item {
     font-size: 5vh;
   }
+  .side-nav-bar {
+transition: right 0.4s ease-in-out;
+}
+  .main-logo-container, .side-nav-bar-container {
+    height: max-content;
+    width: fit-content;
+  }
+  .main-logo {
+  height: 7rem;
+}
+body.nav-active .side-nav-bar {
+  position: absolute;
+  right:2rem;
+  top:3.3rem;
+}
+#menu-toggle {
+  margin: 0;
+}
+
+.main-logo a {
+  height: 100%;
+  display: block;
+}
+
+.main-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.menu-btn {
+  width: 100% !important;
+}
+.menu-btn span{
+  /* color:red; */
+  background-color: #70aebd !important;
+  &::before {
+    width: 100%;
+  background-color: #70aebd !important;
+  }
+   &::after {
+  background-color: #70aebd !important;
+  }
+}
+
+  .main-logo , .side-nav-bar{
+    position: relative;
+    border-radius: 0;
+  }
+  .side-nav-bar {
+    margin: 0;
+    transform: translateY(-0.5rem);
+    /* margin-top: 1rem; */
+  }
+  /* .banner-content {
+    margin-top: 3rem !important;
+  } */
+  #intro {
+    /* position: absolute; */
+  }
+  
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
 }
 
 .nav__block .nav__block-item {
@@ -2160,7 +2228,7 @@ body.nav-active .nav__block .nav__block-item {
 
 }
 div.banner-content{
-  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   backdrop-filter: blur(1px); /* Blurs content behind the overlay */
   border-radius: 20px;
 }
