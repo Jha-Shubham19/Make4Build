@@ -199,7 +199,13 @@ h6.light,
   max-width: 1800px;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   --bs-gutter-x: 2.5rem;
 }
 
@@ -297,8 +303,9 @@ h6.light,
 /* accordion */
 .accordion {
   --bs-accordion-active-color: var(--bs-dark);
-  --bs-accordion-active-bg: transparent; 
+  --bs-accordion-active-bg: transparent;
 }
+
 .accordion-button {
   margin: 0;
 }
@@ -1353,7 +1360,7 @@ This is main CSS file that contains custom style rules used in this template
   align-items: center;
   background-color: #fff;
   /* background-color: #f3f1ed; */
-  
+
   padding: 0;
   /* margin-right: 60px; */
   /* margin-top: -10px; */
@@ -1365,6 +1372,7 @@ This is main CSS file that contains custom style rules used in this template
   overflow: hidden;
   border-bottom-right-radius: 5%;
 }
+
 .main-logo * {
   outline: none;
   border: none;
@@ -1441,36 +1449,74 @@ This is main CSS file that contains custom style rules used in this template
 
 /* Apply Lato broadly while preserving Montserrat for headings */
 /* Keep headings and section titles in Montserrat (var(--heading-font)) */
-h1, h2, h3, h4, h5, h6, .section-title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title {
   font-family: var(--heading-font);
-  font-weight: 900; /* headings stay bold/heavy */
+  font-weight: 900;
+  /* headings stay bold/heavy */
 }
 
 /* Make navigation labels, body content, buttons, footers use Lato */
-body, p, li, a, .lead-text, .detail, .services-list li,  .testimonial-block, .post-grid .post-content, .footer-menu, .gallery, .iconbox, nav#navbar ul.menu-list a {
+body,
+p,
+li,
+a,
+.lead-text,
+.detail,
+.services-list li,
+.testimonial-block,
+.post-grid .post-content,
+.footer-menu,
+.gallery,
+.iconbox,
+nav#navbar ul.menu-list a {
   font-family: "Lato", sans-serif;
 }
 
 /* Fine-grained weights for better typographic hierarchy */
-p, li, .detail, .footer-menu, .gallery, .post-grid .post-content {
-  font-weight: 400; /* regular for paragraphs and general copy */
+p,
+li,
+.detail,
+.footer-menu,
+.gallery,
+.post-grid .post-content {
+  font-weight: 400;
+  /* regular for paragraphs and general copy */
 }
 
-.lead-text, .services-list li {
-  font-weight: 300; /* lighter for lead/overview texts */
+.lead-text,
+.services-list li {
+  font-weight: 300;
+  /* lighter for lead/overview texts */
 }
 
-.nav__list-item, .nav__list-item a, .nav__block .nav__block-item, nav#navbar ul.menu-list a {
-  font-weight: 700; /* stronger weight for menu items */
-  font-family: "Lato", sans-serif; /* ensure menu uses Lato as requested */
+.nav__list-item,
+.nav__list-item a,
+.nav__block .nav__block-item,
+nav#navbar ul.menu-list a {
+  font-weight: 700;
+  /* stronger weight for menu items */
+  font-family: "Lato", sans-serif;
+  /* ensure menu uses Lato as requested */
 }
 
-.btn, .btn.btn-accent, .btn.btn-black, .btn.btn-primary {
-  font-weight: 700; /* bold buttons */
+.btn,
+.btn.btn-accent,
+.btn.btn-black,
+.btn.btn-primary {
+  font-weight: 700;
+  /* bold buttons */
 }
 
 /* Small UI labels & meta text — use lighter weight */
-.iconbox .detail, .copyright, .footer-menu .menu-list li {
+.iconbox .detail,
+.copyright,
+.footer-menu .menu-list li {
   font-weight: 300;
 }
 
@@ -1489,6 +1535,7 @@ p, li, .detail, .footer-menu, .gallery, .post-grid .post-content {
 header .main-logo {
   position: relative;
 }
+
 header {
   position: absolute;
   top: 0;
@@ -1497,9 +1544,11 @@ header {
   height: var(--header-height);
   transition: 0.3s all ease-out;
 }
+
 .nav-active header {
   position: relative;
 }
+
 header.fixed {}
 
 header.nav-up {
@@ -1798,6 +1847,7 @@ header.sticky #navbar ul.menu-list>li>a {
 .nav-active {
   overflow: hidden;
 }
+
 .nav-active #header-wrap {
   background: none;
 }
@@ -2054,73 +2104,102 @@ body.nav-active .nav__list-item:nth-child(10) {
   .nav__list-item {
     font-size: 5vh;
   }
+
   .side-nav-bar {
-transition: right 0.4s ease-in-out;
-}
-  .main-logo-container, .side-nav-bar-container {
+    transition: right 0.4s ease-in-out;
+  }
+
+  .main-logo-container,
+  .side-nav-bar-container {
     height: max-content;
     width: fit-content;
   }
+
   .main-logo {
-  height: 7rem;
-}
-body.nav-active .side-nav-bar {
-  position: absolute;
-  right:2rem;
-  top:3.3rem;
-}
-#menu-toggle {
-  margin: 0;
-}
-
-.main-logo a {
-  height: 100%;
-  display: block;
-}
-
-.main-logo img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-.menu-btn {
-  width: 100% !important;
-}
-.menu-btn span{
-  /* color:red; */
-  background-color: #70aebd !important;
-  &::before {
-    width: 100%;
-  background-color: #70aebd !important;
+    background-color: #f3f1ed;
   }
-   &::after {
-  background-color: #70aebd !important;
-  }
-}
 
-  .main-logo , .side-nav-bar{
+  .main-logo {
+    height: 7rem;
+  }
+
+  body.nav-active .side-nav-bar {
+    position: absolute;
+    right: 2rem;
+    top: 3.3rem;
+
+    & span {
+      background-color: white !important;
+
+      &::after {
+        background-color: white !important;
+      }
+
+      &::before {
+        background-color: white !important;
+      }
+    }
+  }
+
+  #menu-toggle {
+    margin: 0;
+  }
+
+  .main-logo a {
+    height: 100%;
+    display: block;
+  }
+
+  .main-logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .menu-btn {
+    width: 100% !important;
+  }
+
+  .menu-btn span {
+    /* color:red; */
+    background-color: #99191b !important;
+
+    &::before {
+      width: 100%;
+      background-color: #99191b !important;
+    }
+
+    &::after {
+      background-color: #99191b !important;
+    }
+  }
+
+  .main-logo,
+  .side-nav-bar {
     position: relative;
     border-radius: 0;
   }
+
   .side-nav-bar {
     margin: 0;
     transform: translateY(-0.5rem);
     /* margin-top: 1rem; */
   }
+
   /* .banner-content {
     margin-top: 3rem !important;
   } */
   #intro {
     /* position: absolute; */
   }
-  
+
   .nav-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #f3f1ed;
   }
 }
 
@@ -2210,12 +2289,14 @@ body.nav-active .nav__block .nav__block-item {
   align-items: center;
   gap: 0.5rem;
 }
+
 .btn-wrap {
   margin-bottom: 30px;
 }
 
 .main-slider .banner-content .btn-wrap .btn-with-line {
-  display: block; /* make these elements occupy full line so they stack */
+  display: block;
+  /* make these elements occupy full line so they stack */
   text-align: center;
 }
 
@@ -2227,9 +2308,12 @@ body.nav-active .nav__block .nav__block-item {
   text-transform: uppercase;
 
 }
-div.banner-content{
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  backdrop-filter: blur(1px); /* Blurs content behind the overlay */
+
+div.banner-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  backdrop-filter: blur(1px);
+  /* Blurs content behind the overlay */
   border-radius: 20px;
 }
 
@@ -2241,6 +2325,7 @@ div.banner-content{
   /* right: 0; */
   width: 100%;
 }
+
 .button-container {
   /* left:50%;  */
   /* transform: translateX(-50%); */
@@ -2334,6 +2419,7 @@ div.banner-content{
     height: 100%;
     max-width: fit-content;
   }
+
   #intro .button-container button.slick-arrow {
     font-size: 1em;
     padding: 10px;
@@ -2401,7 +2487,8 @@ div.banner-content{
   font-size: calc(1.8em + 2vw);
   line-height: 1;
   font-weight: 900;
-  color: #9e1414; /* Changed color */
+  color: #9e1414;
+  /* Changed color */
 }
 
 .section-header .title span {
@@ -2548,7 +2635,7 @@ div.banner-content{
   font-family: var(--heading-font);
   font-size: 5em;
   font-weight: 900;
-  color:#e6ccb2;
+  color: #e6ccb2;
   position: absolute;
   top: -69px;
   left: -22px;
@@ -2556,14 +2643,18 @@ div.banner-content{
 }
 
 .services-item h3 {
-  position: relative; /* Added for z-index to work */
-  z-index: 2; /* Ensure text is above the number */
+  position: relative;
+  /* Added for z-index to work */
+  z-index: 2;
+  /* Ensure text is above the number */
 }
 
 .services-item p {
   line-height: 2;
-  position: relative; /* Added for z-index to work */
-  z-index: 2; /* Ensure text is above the number */
+  position: relative;
+  /* Added for z-index to work */
+  z-index: 2;
+  /* Ensure text is above the number */
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2573,24 +2664,32 @@ div.banner-content{
 }
 
 @media only screen and (max-width: 768px) {
+
   .services-item,
   .how-we-work-item {
-    margin-left: 10px; /* Reduced left margin for small screens */
-    margin-right: 10px; /* Reduced right margin for consistency */
+    margin-left: 10px;
+    /* Reduced left margin for small screens */
+    margin-right: 10px;
+    /* Reduced right margin for consistency */
   }
 
   .services-item .number,
   .how-we-work-item .number {
-    font-size: 3em; /* Smaller font size for numbers on small screens */
-    top: -40px; /* Adjust position for smaller font size */
-    left: -10px; /* Adjust position for smaller font size */
+    font-size: 3em;
+    /* Smaller font size for numbers on small screens */
+    top: -40px;
+    /* Adjust position for smaller font size */
+    left: -10px;
+    /* Adjust position for smaller font size */
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   .services-item,
   .how-we-work-item {
-    margin-bottom: 30px; /* Reduced bottom margin for small screens */
+    margin-bottom: 30px;
+    /* Reduced bottom margin for small screens */
   }
 
   .services-item:last-child {
@@ -2624,15 +2723,19 @@ div.banner-content{
 
 .how-we-work-item h3 {
   color: #fff;
-  position: relative; /* Added for z-index to work */
-  z-index: 2; /* Ensure text is above the number */
+  position: relative;
+  /* Added for z-index to work */
+  z-index: 2;
+  /* Ensure text is above the number */
 }
 
 .how-we-work-item p {
   color: var(--bs-light);
   line-height: 2;
-  position: relative; /* Added for z-index to work */
-  z-index: 2; /* Ensure text is above the number */
+  position: relative;
+  /* Added for z-index to work */
+  z-index: 2;
+  /* Ensure text is above the number */
 }
 
 @media only screen and (max-width: 600px) {
@@ -2666,10 +2769,13 @@ div.banner-content{
 --------------------------------------------------------------*/
 footer#footer {
   margin-top: 100px;
+  background-color: #f3f1ed;
+  padding-top: 1rem;
 }
 
 #footer img.footer-logo {
-  max-width: 200px; /* Adjust as needed for larger screens */
+  max-width: 200px;
+  /* Adjust as needed for larger screens */
   height: auto;
   margin-bottom: 30px;
 }
@@ -2704,16 +2810,19 @@ footer#footer {
 }
 
 .footer-menu .social-links a {
-  color: #111; /* Changed from #757575 to #111 for visibility */
+  color: #111;
+  /* Changed from #757575 to #111 for visibility */
 }
 
 .footer-menu .social-links a i {
-  color: #111; /* Ensure icons are dark and visible */
+  color: #111;
+  /* Ensure icons are dark and visible */
 }
 
 .footer-menu .social-links a:hover,
 .footer-menu .social-links a:hover i {
-  color: var(--accent-color); /* Accent color on hover */
+  color: var(--accent-color);
+  /* Accent color on hover */
 }
 
 .footer-menu .menu-list li.menu-item {
@@ -2763,7 +2872,8 @@ footer#footer {
 
 @media only screen and (max-width: 768px) {
   #footer img.footer-logo {
-    max-width: 150px; /* Adjust as needed for smaller screens */
+    max-width: 150px;
+    /* Adjust as needed for smaller screens */
   }
 }
 
@@ -3446,7 +3556,7 @@ footer#footer {
 /*----- Why Choose Us Cards (minimal classic premium) ----------------------*/
 .why-card {
   background: #fff;
-  border: 1px solid rgba(0,0,0,0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   padding: 30px 26px;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -3473,7 +3583,7 @@ footer#footer {
   align-items: center;
   justify-content: center;
   color: var(--accent-color);
-  border: 2px solid rgba(197,169,146,0.25);
+  border: 2px solid rgba(197, 169, 146, 0.25);
   font-size: 1.4em;
   margin-bottom: 14px;
   background: transparent;
@@ -3525,18 +3635,21 @@ footer#footer {
   background: #f8f9fa;
   border-radius: 12px;
   padding: 32px 24px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
 }
+
 .services-provided-block .section-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
+
 .services-list li {
   font-size: 1.05rem;
   padding-left: 1.2em;
   position: relative;
 }
+
 .services-list li:before {
   content: "•";
   color: #e67e22;
@@ -3546,10 +3659,12 @@ footer#footer {
   line-height: 1;
   top: 0;
 }
+
 @media (max-width: 767px) {
   .services-provided-block {
     padding: 20px 10px;
   }
+
   .services-list li {
     font-size: 0.98rem;
   }
@@ -3558,16 +3673,19 @@ footer#footer {
 /* Portfolio external link styles */
 .portfolio-external-link a {
   display: inline-block;
-  color: #fbf7ec; /* creamy white */
+  color: #fbf7ec;
+  /* creamy white */
   text-decoration: none;
   background: transparent;
   padding: 0;
   border: none;
   border-radius: 0;
 }
+
 .portfolio-external-link a i {
   margin-left: 8px;
 }
+
 .portfolio-external-link a:hover {
   color: var(--accent-color);
   background: transparent;
@@ -3632,6 +3750,7 @@ nav#navbar ul.menu-list a:focus::after {
 
 /* Respect users' reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+
   .btn-with-line::after,
   nav#navbar ul.menu-list a::after,
   .nav__list-item a::after,
@@ -3653,7 +3772,8 @@ nav#navbar ul.menu-list a:focus::after {
 
 #about .description .lato-regular {
   font-weight: 400;
-  font-size: 1rem !important; /* normalize any inline sizes */
+  font-size: 1rem !important;
+  /* normalize any inline sizes */
 }
 
 #about .description .lato-light {
@@ -3680,6 +3800,7 @@ nav#navbar ul.menu-list a:focus::after {
 }
 
 @media (min-width: 1400px) {
+
   /* increase for very large screens */
   #about .description .lead-text,
   #about .description p {
